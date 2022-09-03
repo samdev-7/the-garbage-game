@@ -5,7 +5,7 @@ from flask import render_template, session, request, redirect
 db = mongo.MongoDB(os.getenv('MONGODB_URL'), 'accounts', 'users')
 
 app = Flask(__name__, static_folder='./static')
-app.secret_key = os.getenv('SESSION_KEY')
+app.secret_key = os.getenv('SESSION_SECRET')
 
 @app.route("/")
 def index():
@@ -15,7 +15,7 @@ def index():
 @app.route("/signup", methods=['GET', 'POST'])
 def signup():
     '''Creating account with username and password'''
-    if not session.get('logged_in'):
+    if not session.get('email'):
         # Not logged in
         if request.method == 'GET':
             return render_template('signup.html')
@@ -38,7 +38,7 @@ def signup():
 def login():    
     '''Will either login or not'''
     #if request.method
-    if not session.get('logged_in'):
+    if not session.get('email'):
         # Not logged in
         if request.method == 'GET':
             return render_template('login.html')
@@ -48,7 +48,7 @@ def login():
             # Check if username and password are correct
             if db[email]:
                 if db[email]['password'] == password:
-                    session['logged_in'] = True
+                    session['email'] = email
                     return redirect('/dashboard')
                 else:
                     return "Incorrect email or password"
@@ -56,6 +56,12 @@ def login():
                 return "This email is not signed up"
     else:
         return redirect('/dashboard')
+
+@app.route("/logout")
+def logout():
+    '''Logout'''
+    session.pop('email', None)
+    return redirect('/')
 
 if __name__ == "__main__":
     app.run()
