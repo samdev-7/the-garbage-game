@@ -7,19 +7,26 @@
 {% endblock %}
 
 {% block content %}
-    <div class="leaderboard">
+<div class="leaderboard-wrapper">
+    <table class="leaderboard">
+        <tr>
+            <th>Place</th>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
         {% for score in scores %} 
-        <div class = "leaderboard-item">
-            <div class = "leaderboard-item-place">
+        <tr class = "leaderboard-item">
+            <td class = "leaderboard-item-place">
                 {{ score.place }}.
-            </div>
-            <div class = "leaderboard-item-name">
+            </td>
+            <td class = "leaderboard-item-name">
                 <p>{{ score.name }}</p>
-            </div>
-            <div class = "leaderboard-item-score">
+            </td>
+            <td class = "leaderboard-item-score">
                 <p>{{ score.score }}</p>
-            </div>
-        </div>
+            </td>
+        </tr>
         {% endfor %}
-    </div>
+    </table>
+</div>
 {% endblock %}

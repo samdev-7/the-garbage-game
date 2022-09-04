@@ -1,0 +1,44 @@
+.leaderboard-wrapper{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--greenCol);
+    display: flex;
+}
+
+.leaderboard-item-place {
+    width: 5vw
+}
+
+.leaderboard-item-name{
+    width: 30vw;
+}
+
+.leaderboard-item-score {
+    width: 5vw;
+}
+
+.leaderboard {
+    margin: auto;
+    background-color: white;
+    border-radius: 1rem;
+    border-collapse: collapse;
+}
+
+.leaderboard tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+  
+.leaderboard td, .leaderboard th {
+    padding: 12px;
+    padding-left: 16px;
+}
+
+.leaderboard th {
+    padding-left: 16px;
+    text-align: left;
+    color: black;
+}
+
+.leaderboard tr:first-child {
+    border-bottom: 2px solid gray;
+}

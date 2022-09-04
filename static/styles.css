@@ -19,13 +19,6 @@
     color:black;
 }
 
-body{
-    position: relative;
-    background-image: url(imgs/ecotreebg.png);
-    background-repeat: repeat-x;
-    background-position-y: center;
-}
-
 /* -- NAVBAR CSS -- */
 .navbar-section {
     background-color: var(--greenCol);
@@ -47,6 +40,7 @@ body{
     position: absolute;
     padding-left: 15px;
     top:0rem;
+    color:white;
 }
 .navbar-section ul {
     display: flex;
@@ -54,6 +48,9 @@ body{
     padding: 15px;
 }
 
+.navbar-titleTxt p{
+    color:white;
+}
 ul:last-child {
     display: flex;
     justify-self: end;
@@ -102,4 +99,40 @@ a:hover {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+#score-txt p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color : white;
+    border: solid var(--greenCol) 3px;
+    width: 130px;
+    background-color: var(--greenCol);
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#title-txt p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color : black;
+    border: solid var(--greenCol) 3px;
+    width: 25rem;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#check-recyclable {
+    margin-top:0.7rem;
+    margin-bottom:1rem;
+    background-color: var(--greenCol);
+    padding:10px;
+    border:  solid var(--greenCol) 1px;
+    border-radius: 10px;
+    width:25rem;
+    margin-left: auto;
+    margin-right: auto;
+
 }
