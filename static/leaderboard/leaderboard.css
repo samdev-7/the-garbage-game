@@ -22,6 +22,7 @@
     background-color: white;
     border-radius: 1rem;
     border-collapse: collapse;
+    overflow: hidden;
 }
 
 .leaderboard tr:nth-child(even) {

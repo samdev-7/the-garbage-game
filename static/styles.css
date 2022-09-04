@@ -50,6 +50,8 @@
 
 .navbar-titleTxt p{
     color:white;
+    font-family: 'Monoton', cursive;
+    word-spacing: 5px;
 }
 ul:last-child {
     display: flex;
