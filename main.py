@@ -30,13 +30,15 @@ def signup():
             # Create account
             email = request.form['email']
             password = request.form['password']
+            name = request.form['name']
             if email in db:
                 # ALready signed up
                 return "Account already exists"
             else:
                 # No account exists
-                db[email] = {'password': password}
+                db[email] = {'password': password, 'name': name}
                 session['email'] = email
+                session['name'] = name
                 return "Success"
     else:
         # Logged in
@@ -53,12 +55,11 @@ def login():
         elif request.method == 'POST':
             email = request.form['email']
             password = request.form['password']
-            print(email, password)
-            # Check if username and password are correct
             if email in db:
                 print("in db")
                 if db[email]['password'] == password:
                     session['email'] = email
+                    session['name'] = db[email]['name']
                     return 'Success'
                 else:
                     return "Incorrect credentials"
