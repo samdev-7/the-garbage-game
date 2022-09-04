@@ -52,13 +52,13 @@ def login():
                 print("in db")
                 if db[email]['password'] == password:
                     session['email'] = email
-                    return redirect('/dashboard')
+                    return 'Success'
                 else:
                     return "Incorrect credentials"
             else:
                 return "No account exists"
     else:
-        return redirect('/dashboard')
+        return 'Success'
 
 
 def is_signed_in(email: str) -> bool:
@@ -101,7 +101,6 @@ def logout():
     '''Logout'''
     session.pop('email', None)
     return redirect('/')
-
 
 if __name__ == "__main__":
     app.run(debug=True)

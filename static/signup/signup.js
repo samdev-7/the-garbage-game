@@ -11,6 +11,8 @@ function submitForm(event) {
             console.log(text)
             if (text == "Account already exists") {
                 alert("Account already exists, please log in");
+            } else if (text == "Success") {
+                window.location.href = "/dashboard";
             }
         }
     };
