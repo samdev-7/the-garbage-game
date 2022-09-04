@@ -11,6 +11,13 @@ app.secret_key = os.getenv('SESSION_SECRET')
 def index():
     return render_template('index.html')
 
+@app.route("/dashboard/")
+def dashboard():
+    """Render dashboard"""
+    if session.get('email'):
+        return render_template('dashboard.html', session=session)
+    else:
+        return redirect('/login')
 
 @app.route("/signup/", methods=['GET', 'POST'])
 def signup():
@@ -58,7 +65,7 @@ def login():
             else:
                 return "No account exists"
     else:
-        return 'Success'
+        return redirect('/dashboard')
 
 
 def is_signed_in(email: str) -> bool:
