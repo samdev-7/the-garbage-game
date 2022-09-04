@@ -1,4 +1,6 @@
 function submitForm(event) {
+    submit_btn.disabled = true
+
     event.preventDefault();
     var data = new FormData(form);
     data.append("img_id", img_id);
@@ -20,5 +22,6 @@ function submitForm(event) {
     };
 }
 
+const submit_btn = document.getElementById("submit_btn");
 const form = document.getElementById('sortform');
 form.addEventListener('submit', submitForm);
