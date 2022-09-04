@@ -1,10 +1,10 @@
 import os, mongo
 from flask import Flask
-from flask import render_template, session, request, redirect
+from flask import render_template, session, request, redirect, abort
 
-db = mongo.MongoDB(os.getenv('MONGODB_URL'), 'accounts', 'users')
+db = mongo.MongoDB(connectionString=os.getenv('MONGODB_URL'), database='accounts', collection='users')
 
-app = Flask(__name__, static_folder='./static')
+app = Flask(__name__, static_url_path='', static_folder='./static')
 app.secret_key = os.getenv('SESSION_SECRET')
 
 @app.route("/")
@@ -12,7 +12,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route("/signup", methods=['GET', 'POST'])
+@app.route("/signup/", methods=['GET', 'POST'])
 def signup():
     '''Creating account with username and password'''
     if not session.get('email'):
@@ -21,20 +21,21 @@ def signup():
             return render_template('signup.html')
         elif request.method == 'POST':
             # Create account
-            email = request.form('email')
+            email = request.form['email']
             password = request.form['password']
-            if db[email]:
+            if email in db:
                 # ALready signed up
-                return "You are already signed up"
+                return "Account already exists"
             else:
                 # No account exists
                 db[email] = {'password': password}
-                return redirect('/dashboard')
+                session['email'] = email
+                return "Success"
     else:
         # Logged in
         return redirect('/dashboard')
 
-@app.route("/login", methods=['GET', 'POST'])
+@app.route("/login/", methods=['GET', 'POST'])
 def login():    
     '''Will either login or not'''
     #if request.method
@@ -45,24 +46,63 @@ def login():
         elif request.method == 'POST':
             email = request.form['email']
             password = request.form['password']
+            print(email, password)
             # Check if username and password are correct
-            if db[email]:
+            if email in db:
+                print("in db")
                 if db[email]['password'] == password:
                     session['email'] = email
                     return redirect('/dashboard')
                 else:
-                    return "Incorrect email or password"
+                    return "Incorrect credentials"
             else:
-                return "This email is not signed up"
+                return "No account exists"
     else:
         return redirect('/dashboard')
 
-@app.route("/logout")
+
+def is_signed_in(email: str) -> bool:
+    """Check if user is signed in"""
+
+    #TODO
+    #wait do we need this tho because by default they will already be signed in or logged in from the first part right
+    #like if we call the earlier functions first than it's already guarenteed that they are logged or signed in
+
+def get_streak(email: str) -> int:
+    """Get streak from database"""
+    if email in db:
+        if 'streak' in db[email]:
+            return db[email]['streak']
+        else:
+            db[email]['streak'] = 0
+            return 0
+
+@app.route("/api/log/", methods=['POST'])
+def log_info():
+    '''log()
+    will count last day they logged and then increment if it was consecutive'''
+    streak = get_streak(session.get('email')) #SAM IS THIS OK
+
+    #check if implemented, if it is then add increment that is in db[email]['streak'] 
+    #if amount of time 
+    # TODO: Implement this
+    # db[email]['streak']
+    # request.form['name']
+    pass
+
+@app.route('/api/streak/', methods=['GET'])
+def streak():
+    '''streak()
+    will tell you the streak'''
+    pass
+
+@app.route("/logout/")
 def logout():
     '''Logout'''
     session.pop('email', None)
     return redirect('/')
 
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
     
