@@ -34,10 +34,14 @@ body {
     margin-top: 1.5rem;
 }
 
-.form-label {
-    
+
+.sign-up-txt {
+    text-align: center;
 }
 
+.sign-up-txt a:hover {
+    color: grey;
+}
 .form-input {
     margin-top: 0.5rem;
     padding: 0.5rem;

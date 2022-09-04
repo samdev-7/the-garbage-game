@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        {% block head %}{% endblock %}
+    </head>
+    
+    <body>
+        <div class = "navbar-section">
+            <div class = "titleTxt">
+                <a href="/"><p>The White Hat Hackers</p></a>
+            </div>
+
+            <ul>
+                <li class = "navbar-items"><a href = "/" >Home</a></li>
+                <li class = "navbar-items"><a href = "/leaderboard" >Leaderboard</a></li>
+                <li class = "navbar-items"><a href  = "/sortgarbage">Garbage game</a></li>
+            </ul>
+
+            <li class = "navbar-items-login"><a href = "{% if session.email %}/logout{% else %}/login{% endif %}">
+                {% if session.email %}
+                    Logout
+                {% else %}
+                    Login
+                {% endif %}
+            </a><a href = "{% if session.email %}/logout{% else %}/login{% endif %}"><span class="material-symbols-outlined">login</span></a></li>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,232 @@
+[
+    {
+        "id": 0,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/battery/battery1.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164136Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=584e1b9a2287248c5479c42b0181e75b170e34deaa40c35c29c12902d39c742f4f6baf9709170fc04d853c53f0f1b757ae2164c21b4fe0e2f93cb11658bf83b44fad85db5db353fce342fc6fbf447fa0d9b0a88c17c7c713c8b1d68d386212df459bca4a627ae0ebba107316e78cff40862406c8fff0fca060b011a7a07fc013eb9d4b9b409cfafb343afa359b5195646ae4164991f90689ef27e88d5e27df8e7dd6c1cb76054553afe7f0dbb86cf7ed34b90ff839bcfe59485769a626343c9dc04bfceadbcfcb3d9c682892e69ba7e8d64e459cb54821c345441807dd1a812ee963198e5b4a626b1fa5ced05766642af49ee34aacf30198e105544fe4bc7f16", 
+        "recyclable": true
+    },
+    {
+        "id": 1,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/battery/battery10.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164136Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2ae4e636d3548c65accf5f084afcbd76617477be682df0faa8267bc4f88c89cba4529c446175431b136c8e8e7e40a526f13061ccaafe9392ca5c55c08a4874784185ed827acfe5bcaa6d4fd2ed16b6920d35c79239254154c20c59747de3676a68755a4c57996414dfbd2951a88ee2483f7ecd1b13bc84709073ebdff0ef337291fb2937cc0fdd7e0552d689ce825eba88705f416e6d43120ba37d0b6a3eb0f8a1f43248b457746e8f6d777142a1c13ec044583435b1514208e1af15950ae05bab9b46732426fba3121419c39a4d848d48cc710dc77e4e2bdeac478892c8447877f6fd77df4565ce2e8decbed7ecc3932bad9948413d0c1be873a8a63a007095", 
+        "recyclable": true
+    },
+    {
+        "id": 2,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/biological/biological10.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164605Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=b0e3da7b44c015197c94f8865883905d8d4fa8e407c1272843e85fa1240464b73d6e525fc6e80a879397812751f7cf23ce34f66277b528a1393dcf343f68bca8217dc196b870c66f37dec337610bffd40f6d608ee8af8d0cd900988031e015a5f6890a7b07f23363369f1720e0fbf6cc506b817b11c812489e1736c932f2c47c7bd41c85b12abb26da95b8eac6c2c39a633c63cbfb4a0083e49a692650b1de8dd51acd42bd693a22c682d07fba205e1ce0d78d59c98afebb59a8bc7602dea2724de001693ef78230f2c1990c9fa4d2dc72c994e25d0f5f3c64956c1ea59041c0faaf1b46a2a987bf5c5f433680866fd9a21692b2b275f4cb18233be7441878f3", 
+        "recyclable": false
+    },
+    {
+        "id": 3,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/biological/biological101.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164605Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2698391b0aed97664113ae80c2672084fa25532b55908457ad0314549af7c5de00288b571f1c5292d999b070caf927d6fd11d733cd6372ac37972c30163f08296332e1c2fdd32e36cda443a6b1186b5b0b1e3e02367792c9837e22577df7834b6bb3d3b2815aaa2dd42b23a362fdc9c6017fd8c0587eebf20c0f9d7a643143bd726b64d9821ea002371055c9d7e8495b3ccb87a98a2f800512ad98a56b7911b61fe1e97cc398bc72c6057dde472c4d242774d7469ae294f9ec1a1dc05d5fd974b3079fb2a7f07719aea4c55b0ae0a36716284398b0ccf4d02f95bf3304c22aff363f6eb8300a40a4176b770743ba81dd3e98f7ca8e0bac5b749f8ff5a1166fdd", 
+        "recyclable": false
+    },
+    {
+        "id": 4,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/brown-glass/brown-glass104.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164747Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=28205f6285960b1fd385fd3cef3e5600d33aab88d305e48e34731091a3575e9b0e393c8baf64426830586dd44a15c183b4a5477631d087c4e70fcef532da809fbb47ff749673817984155269ee4b0bc7090f6b892298f3e75e66d426ad40b1101fef76b0fec608ac2524ec5e73fbec1deee255b09e85d1041e40dae5ec3a0bc2d491ba3f9abe0a82130df558fcf59e119c21a048d484fab36adabb3f7c2d6fa88f28e4baf411d206ff3d03374d83e76a49ea4a3cd600d6d5cf9a6e9b28bbe7645c128125e46fcfe8395558959e7a66ed4263c5bebea36c33c98943a4882df5d56470fadbd458aa93ca21bfff2c641de4956d371b40e9c88b0e5e863eac2f7d53", 
+        "recyclable": true
+    },
+    {
+        "id": 5,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/cardboard/cardboard1.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164957Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=8f1c0b5af8fc569f1107b7198ee53553ab8d99e071c2089fef74406f598035bee7e431a7a3a5560088f0287f748d09b85e3e6622881d57fc0146846eb63ca4d0e34a699d8866eac6d6e8ec0f3f5fb4ea0b86b4bc7fb67d9757f3a59c72d6cc3223aa98c626008dd2ffb13602af4d3c025a5a84201b50d40ec05ab983ee796be7fdbb1de38f7d914738f35cb3adef586e4c4d67e8b1b47b5f17a68fb6655e640414c8e3ed8982edd7dda9975de6afc46691a8e638f3dac4aa073cae4d98aec606ba27789c708fb8b5dcc0042d72b0f959a245a0df297fe447668c22900f3e4c5d0734fcdbd7a9395ae606c667f657c4bac94969421ea808a5afbab117d0f7ed02", 
+        "recyclable": true
+    },
+    {
+        "id": 6,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/cardboard/cardboard104.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164957Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=a29dd97422a752922e63a18a64296395445e5226b1e2466fa98d7c082b743b1f71de775f0a1c344b4ddf9dca19914cece932f5ff60981b87f49ab2e7101f361989d02e55e70df40e247af3a733008ec0301c49a06226d4baf5bba9884c09a7b5325a3fa172066026ffd574b167c1d629e8cca664c8d817faaa36e8a9fdf2ed0ae2558f008debd07e49fd753060baf00f9f726427e158de2ff07f4e548d79a3a562b3ef9f7279dc1d9ff65a58020681481485713ec1c81ff3bdf98f8587022ca90905fa4a28645a434ca30fbcd16032fac4c1a6cf6a06dcb912fc1c954a24d2f63dd1c5e546abf531a0886d3cb905b7474f1b6e129c7a4ae1029c808d9f85e03d", 
+        "recyclable": true
+    },
+    {
+        "id": 7,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/clothes/clothes1.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T165352Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=6c79e6cdb50f6e136a9e713739aad05a7b4a50d7b9b241a1b5f676205597c512273b33746643958edd8176303393ab8ef329058a3acba17ff12f54ea140928e29d92a747bb85c5df0e647e7de0a1987ab851c4c088e219fa1f0820bfb9671c047da2be2efdddd3b16d90d7035f8230a2d904685215c1915340fd4f26f93a6db2e41f5c79c4a84dff00b228848a07c9bb72ebc9aed2120bb992bdfa5c626360d6720e5a1bbd19f7ebf5a599272c4f8c303f2b720a968921eab2bd3cad763fbe3766cadbcaa8c36ec15e4849eb5a8394b18142354b218705c971dadda51f5bda3953779ee203b3571fe3d32486c20a22e2e4cd820a2ab4e245e192e5810021792b", 
+        "recyclable": false
+    },
+    {
+        "id": 8,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/clothes/clothes1007.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T165352Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=b45294390a0f62612b99e24b9c132596c13e3042d2ada3ead1c052657cb2e7c8f5f475e1e27b6f95704485dbc7e2fb36766aac4bdd19072433d24085aacba2faf4fee761c109b716e66ee6d603b80bd3ea145a6ffe8b5222d2699e1c55016c0d0a0f19bd43caaac404fc671167a12965c4a51cb2ffc40888a2e31e47d332a3f9c518e787d6c8df8b2d8fb9fcf1e9a58fe3e750812b7c5600ee52ce3b6c05a611b16d6acbe5bc333f5325b967dbaada7e5ed7776bf6d39c595ae9edef778d63c0f7a93957747e27c6e2096d647da25a462c2d524a68f208247d965e20bcba7c3c59e5a5b72ce9d8b21197d40e891ee9f5e2ef9fbe687212b1b358c12f8bcf2d5b", 
+        "recyclable": false
+    },
+    {
+        "id": 9,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/green-glass/green-glass105.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T165525Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=182e934f07ebd9b6132f4db1c4f3826915a57fd496ba327005b57c6d42c1ef3dd22921d52741644be613f30ab304331b60e6634f98a43b01ec98d92537ba67b5c2b61fd3bcff9199d881252d057e01f927907f354922602ab999cccc89ea977ef6436f83d1e9a8914e468861e7eab54cd4a4824cae7b19eda2f52599523e3e58e4f2aa35b8b63221d02af24f1d62ce50068926a1612ae3069e5611dacb89b62e68423b2c8363a1cd963e82fc869fb9cc91851c4d5f2a729fcdbb222a026cc2a81f3e7a132bd01f2389d828da6df8b48447aecd8227c950af3f4b80013e41f28801d0bc6d9803b7e20af2487921d5baa8b31bea0fb085e45e7417c0de95b4240b", 
+        "recyclable": true
+    },
+    {
+        "id": 10,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/metal/metal101.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T165622Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=5c6ff039ed7da71204c2861e48f296004e6ace03caa4033097c720326cad2537993c1c26a2a4fc4e2bd06242264217fd2f78068f6f413ea677e66b2997c8f703f1cc9cffac1bd0f33569e1fd65138f04477efc09157d4a24f00dcf7b110ff48354f3d49f553206ea9d8c297dda9554f1b6b1ab295308a1c22f34f09c588fa4ba156c43e265f76f8dcf18484f6fd6fbf66a2202eb5b544a7f05526136a0643ee3c321e940c9b0e49c84f940118255d6edaa18da3c9d162301c8a6e2bbf65921482e1bcf0a06ff9e746a8aa513e9f9133354add2f835218875d461a8df1fd2aa0d2c69eb9ee9c3686a418651a203aa08119511598ae79ddd6fae195767cea9d1e2",
+        "recyclable": true
+    },
+    {
+        "id": 11,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/metal/metal115.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T165622Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=95984abdbaecb596e47f0ba2a2bf51a58538b94136ea8329861b8b3a4020f66067885083f8fde8c6f4573fd92ed58cc018a9a193f0e5073896fabf063bd1746737e72baed2a45c2c184c3213c0817da9ce7b58a5389dff39c0251f9bb63186b426cb701643fe8a9319743109511ecd03b17b3a0a172035b01370f7c1141d48bb87cd32f40f1bb97736b12c9adfc1e13531d2e220e61cbfff492ca2153a71a91292400860833d10042de298e1c1fc4d2a45ff4e249909b80c8a2ec882396f940a0f2774b8735e9d40e5686028598bb0421c63573f94eb42d6f1ded4d60e0b7162bb90cd377e361dfa8dc4d31aaaa7a6838ab6ef34aaa6cadcdf84f244787828c1",
+        "recyclable": true
+    },
+    {
+        "id": 12,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/metal/metal109.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T165622Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=7937dd89a61c4190c12003e46a174ce32d93ee4d5e08684c50d1c3c120d7f13f76a53c1ba0f347d487f80435e424bbc93198f4325be3760721cb368a45c91c2c96b3b0e7bbb78476da4df994e9d4a1cb78e5ac358079a0c3e2993838f8688226cfaa7ffaab2e81b85e66f96138139eb5620a61dda377db9fef8ba7626a3afaf6f9832a2ed4661dd9b894a16b8f7f6a25e525533bc4e008d35206c18cd1b1940554df667a09bb5436d63911f93287ee97e81ca90eef7044fd451dcb47eca47d1c6b5edcca5352b67e18fb929afc99ff424eca3f4617618fc7bc66ef062e4f958e9c742d34fea4eede880df0f6e322d61ab842cac9d0ab3999e322e643d715e6c0",
+        "recyclable": true
+    },
+    {
+        "id": 13,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/paper/paper1022.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T170135Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=7047c4aa40a10dd8a4c2dcf9ee336c7bb67de351d06a35bec410c67e35d559db0b471cb65646122ea5b8ac9a26c792b0378def245ea5cf7f802cf9c8b6ecff22074581eb7e9474dee721a26384ad259e2b3bec23ea70db80f308703dc478f898e8731b837e1ea58ef73be13e49c70f9c3bab9f9bbb07906fea896946cb6cb592ef983659f74b93a4fc620eed24d1bc3914fc89226dacceb0cb6d84269b23b47cf5073743665165906df7a9df82f960aecf419ffd36e25f14f22a062fa8ba511a10f52bbf86612af900564f1546e4e74eb3a19f18effa7f98cbd30e0187b91596b212989c677c202ee524a73e68b9bddf61bace8542c4d28e503cf2e824a563e1",
+        "recyclable": false
+    },
+    {
+        "id": 14,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/paper/paper1013.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T170135Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=b9fb72c063a5bad1564b5cc366fb26e0b85f7b002603140465cece5478fc9b168303655a45e0ab864fb51ccf811eb0df56b9bf751aa8fae9d39a5eac3dff116c282f224aa1b3ad8fabac7f75b18fb8139236097eb901fa71f00adf9c5031202a5882efd7e71dd9be44150bd8a50d75806947dc35dd0352bb5bc3b4db1dc7acb32a34224cbfe703759c06c0df3c27e274a77c7cbe2bfc4ac8fd11da0a3efd8dbbff219a8501895147a16c1896f846ae38a5be78a7ecd9158923252babdfdd147e0889631e6dd1843a13649633bdf76057662d153fb602df52d96706bef6c4cd118ce9083569be1188843974d004cc61b7c60c8837fbc129cba10321e16bfa14dc",
+        "recyclable": true
+    },
+    {
+        "id": 15,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/plastic/plastic10.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T170257Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=1f5b05e952c874f93d8dc1ae59184405bf120633e22edf7e8233470f5b419f27bbc352747a1d7b09836f92e9a07b2bb2cb38a47045cf05ac62d75db05ff7edec4826af77eb7b5734e64872c70a226425e0a2edcbcaf8fb782ebccdd91bc5fdedfd427097be1c1a7a574b4f0cd70ebfb64c81751877cf3f30f60a0ba4eda7ddfe15f07d996e83094ef9ed7d0a4df63016362157d5c7e8c4ed76b7f521b960e100fd2adab89915a30776c44a521cb0f00b4de826e57934ac73231e4bb0bd8f360ba8d3a5ff610a210885889e7694633e1614ee5e37c4642b1400378fc4b135051ebb4b647223be4c4f54b739601c7012142ce5d379224b18a0f22e04801a3e3722",
+        "recyclable": true
+    },
+    {
+        "id": 16,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/shoes/shoes10.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T170631Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=586787b789bedd00b90a527a01b4c5d77e677a88e1bb14b98eb68a034ba60ff28d7cda1e4083f785b9a156abd9e562b8f9e63adda5e43af244c1e8577e453e969eb498695483eb47f1180dcb2c7765d0ed61297cdcc409b8730dbdad0037916b9098e85b3e8043d0b6b1aab1bbd4e37c53dd910405851f9f24a5d9364ae7eef504f2fafa00bfe18483bcbf3aa3ab1b61bbacb6cc723d14165afd3e4412dfbc7976f3fc2958f7d8e984c8d99a342f235b1e7aad81108857ce6e43b2e80b300e0dc52be61d67094387d7ee9ae32ad5767b643280b4183a7f4b56dd37d3911b2bba8bf27f46e9ac735d8351e65d4a30b6b989cd8f999140c1a229d8b02540435ef6",
+        "recyclable": true
+    },
+    {
+        "id": 17,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/shoes/shoes1005.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T170631Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=5452bd5ee123368dabe280f11ede2341b73421572c8643d9d764b3705719dc3617a695daf32ae0c8b87947193c422159b3b9e75232a46afee2da54480cec22c4b2f39a96e9bb292f0403312195d3f41e20e40295b161b6b94b3352c4c39d9655813b1d4f5ef1aae54606857ddd23136701f9b45689eaef9db7a58145b4276094768a4d02273eab7550a8b66c3dcf110d19f45815d9408c8e086875f6684fd4b999a406ce9cbac8b0b09ead8bab52651056f7b9599570cb1d61c5a624cd33b63edeb7997efcf2e920561b5bda685ec86606218b3bc99b6872d9a891c5871f21dc275b7cb32ee48629dfb933d604c27995c3f6dacc521a218070bb78cfef2b01ab",
+        "recyclable": false
+    },
+    {
+        "id": 18,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/trash/trash113.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T084459Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=ae020b9d35a687222badb931ee1d1bfb0eb20b08cde5b54a62ae2d3bf79a916ee6bb3a01f1d8ab3986d37cab3470a769881099a2fe889b9d360e16a3cfb6a4e6c8c5793be950a23b66f855b6093aa48c3474828da6141b77f41f3de37e2585872779b4815d2a11ada61f048898a1ba9c38eec3a63a0f170076a2b642a818f54aeee3ea6b409f0b75ce4a5ee87aee2a17e57495cd5a9289a6cf01960ffb87a29300a34b9fba85e15c1a9f599405b5e26cc02591172efe84bcc89e27a55b8c2d6794d30742842b32f545f27492a2d96bdd9bc5274dea40498f148155b44d2db53fef1fcba006b0383d2288f42048864b94b6d3bd7550a337215f09e1fbeff91ca5",
+        "recyclable": false
+    },
+    {
+        "id": 19,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/trash/trash100.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T084459Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=ac0168e91a63f9c33fed5219c98b1f048c36648e5cecb3531f86b56c4bc0114e892b757d049badf3d9922adefe973aee95db60d8c3778653fd9424b61ef4f16155414f456ade9210223dcc3e3c9c87dca022b6268704a7e552cb80c78647c4258e43ae35c869ea876566e4a82a58c32d4274db0343f3ed35b10abf1ebe0098b2318d2c12a293ef0e223e25b717776c93e8e300cde3b186beb335ecbbb69ce7c40331a478f7253f3ee7af13bcf63ac2a433a107d0146980969c947e837672e0f509de5b6051ecbb9dd55daa04295644df62d56f144bad106dd5a97773eace5d5a20b272afee0c2c28408c0cfb117db30b1621284412a036ace29eac91d3f0277c",
+        "recyclable": false
+    },
+    {
+        "id": 20,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/trash/trash110.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T084459Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=7a8d1d10fe38e689e87a4ef1eb3b40b7796790d26c67f974c04d08976a349c4b4a4b9c3194451b2ffadfef8a29b99ffd696b940430b1b9bb28e028f20eaf95640245564dcde1cd4edd97c4b013f5071ad4bf2573192d24931f571bdc02f45c6ffb7b13221bfdb6101f954680ef46d1688eb5d92755326cc67eae3a87b45a99126e345b42c16dd8a655a5433c2c2df9e8984a37a6fadb50ccc374a8c2ae9a01dc599413077b300c864d7237f0d6c4b11d46989c096d743d70b90ea28fdddd1ae86725e96a65118f53ffe0db0bcabddf886a5ce127c0fe6487dc8e2ee24d2bc61d9ed97981e09e0559747b64a943a8284d6e4598340ec5c16d79ee29524a2334f7",
+        "recyclable": false
+    },
+    {
+        "id": 21,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/biological/biological11.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164605Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=32bb75d733dc537941134ac73a089c5fd4fb8f94425bf83d613694c4dc286856830529bb608689b02b8b413a5fdfdc07d628f9ae50c0ee50e680cd8c551224d23ecdc4e14a2d38c75909da32aa5639d1e2bd2c7d8717e0568a8c1619e930a940b2bfa3b5fc458c23c65f3176107a35860619c16d91db74acc468a4f7cb7f83072c0888f65b150594824fdecffe5a9c0e52e5585f57c7ab0bfa313cefb61f82e05825443195b6a8f061ffb64fcd3d29200adc3a275b1eec51e26cc05f48251ca3d1db06f64a1c84ed3bf31770583886f57b3b9ca5f5323a69ad11dde636e4f879ecc3eff1d0a20fc4978c7e11d45c0acbf65dc20623e611c256dc46dc52023a86",
+        "recyclable": false
+    },
+    {
+        "id": 22,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/biological/biological116.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164605Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=6102fedd12a8def893f6ec61a63d2767ecb1f6de0edad93e004af7a478cfe87b35110e47b499ee6671a2de0f5bd7f4c5bf7367503c233093d8d2e5d5ebf32c2eda883c9390fe64d601f70f2a923c011d95e8602498643a4cb485cbea8fc1398c11d3290eab5b9d4aeeca13f9dfd70cfffa056a7799e89bffceb196d80e6fcbb421dbf6125bf8613d978085d97a08ee26708e2e889f4da6930059c914ca0371236f4b5cdbb20cdee81ae3b473c20daf5fa16c4883a4709a88a003a878768c051c7dd5958a8ce66170163f88df47d29bdb43e643870c914b4626d8fed0175b7ad56db737821e634fe2352109a4f7a701f9344eb15062c0a2cb533cfb93585fee0a",
+        "recyclable": false
+    },
+    {
+        "id": 23,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/biological/biological12.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164605Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=298950540005b084ffc2c38d73068b8ba4f75ac559ed4e239d828f6a2da67300228bbf1c67b999fac3a4863e9ba3a0e8a1ba991a0fc82de63dbe3a68399ac63c46aebc66939f8fd5b8dd8016e9109d8874cbc82fe88a36f90153ccdbad1f904d2957c89a1f0c70c7b9d2b09fba2fb7bf0f00bd94f26f55f6b76d45cdb00dd419a09adf667362c10497b345570b71dbe0ac5cbc3ee6f2a0f4af836c8e564720b10a511918429ac14b4d4dc292b6080544a3831ae17860720f5f3b986ced28257049b12ecf7d55bc3afc7e5f805f63c77c687fabd0b6fb1d4b9a9b61e8a2bf4ef7c5ac97c90951d959037dccccb4feb40c5c2b6b5cda1ea4aca95764a7dc06c697",
+        "recyclable": false
+    },
+    {
+        "id": 24,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/biological/biological113.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164605Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=57ec6a8d312b1792ce63faa756f7ccf2a1ab63da37996165095a2e6b1644674bfe0d15fc81393e5dee2f9acb290068f2ba68be677d834482eaa25cf6b9ed1e0fca096f6ad1cd7139383982813629a151430d39400bde88c5837dc350bc6a97c4cd3694136669955a0eebe28d91561a5a30653417d373eafee4a76788b156f84b14c7a5d47f70b70e6f8b9585dc8212aacaec4920b087675487986b4d669e03d21e8794efb010dc122f44d7457010bea5eaffcd478c2f6e19af07bdae4e9b858bd25a92c613c6d2a0a3bdabe293b573bfbf00839a0810cf593848e3ab18b511650d441d59e83271de3ad6599376190e304feceed4719902e36cf2fc2fdc8ac1bd",
+        "recyclable": false
+    },
+    {
+        "id": 25,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/biological/biological109.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164605Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=01426d6907439c123f74765ec411c3b90a8f68f681f619f41c28717ff93c8bfc4f0b757848154d58c5404fad9d7990f40f7c0b156c3086f627e0c6a3a2525213834ed96d5c1bfaa59f2fa35b4717f429f07f7de5395c6a3e9349aaff9e57dc02cd8fd3640c49a2d4cdc8b5d682341d9041203d898e9aa8ffd73320f80a6927857c648714222ef0a63818c1f92923891bc3e7a37f68a0205f1ca5c5be65de5eb56ebb8c2b491f5195997d5764973203ca09a48d029c8e15a9552fefe1280cda3f034ee0c0a030899ea1fe4c6a3ce340477398f8ada64cd45d78cf53f617860eb4582611ed6a0696af48448349e48437da6c9715dadb8df0ca4fb34f06b37a4825",
+        "recyclable": false
+    },
+    {
+        "id": 26,
+        "url": "https://images.everydayhealth.com/images/diet-nutrition/34da4c4e-82c3-47d7-953d-121945eada1e00-giveitup-unhealthyfood.jpg?w=1110",
+        "recyclable": false
+    },
+    {
+        "id": 27,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/battery/battery108.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164136Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2566629e29f5b48979b57703dbe0a0151d2fc0211fada9acaf76ffb5f7feb79c846d34ea210a8513ae294ec3fd4b60eb671985aaa10892a8a3f2df0cc92cdcd51927862f2f1cb24e042095208abf1de7e50c09e257a01dde6afd7c1aaf5d54f8bafe77d7b6b8b53b248421d2fedc62934de7db98a5b33fdcb8e3843caa9966958d455f3ef3b75b4b22118dc6c5775d63d025e9c3021fe2adc2911332ad09a41a76f90a66a0c57a70a18c098c662f8f5522579187c6ae4a70fa1bb0a4f74aa396bdded34fac147a21f6bf56af0934655fa2f6fef5cd29c6e45a6f138feaaf7164b965192dd503290fb9194e134d08fc20610316065e72a3cb3169af356c31e016",
+        "recyclable": true
+    },
+    {
+        "id": 28,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/battery/battery11.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164136Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=8deaa6e2839e3fbaef82b9ea9eeebd6962c0f2a048d4540007883312712e8cb2a2252a9d3e2891be82b7e3bfef3aa8cdfb5e3b0da31e1c0ee0cde3dc3372946195dd2ed7848c585eb0bf1ee8855b85fddd4ac66b6901d506771be0c282b13212e5acc003fea2f3b827cd281c982b331c5872efd3df8dbc654925da4e4a7d08b6d0b110ae1755d36656396e5ebff415a1c44f497933b0b15af631b27fc44b5e1aa93e6b2d58f4e7b3c497934493d6ec31f992077d63cedf4bac6d6111187239c107927ee1ae66e46d24953a1ad778123a6164cf411f2f03adf654824acacccff37cad91143af2a2818a21754c98580021e57abcfc3d60dac998746ca4dbb21e4b",
+        "recyclable": true
+    },
+    {
+        "id": 29,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/battery/battery118.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T164136Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=6e6ccec0353c09528be291b70f41225f5012f9217f7427ef59f844033170d3d904923b86e84a1f6e686511d8cf2bb84eda92db423bd6406bfe1813d1ae2445e730cc4c4bf025b2d0ce2b0e56611af150dd36d07fe249c9d687cbdff7610fbff07b59f4332a03a0c1ed52be3c192d6ca52f85dd3296061ff231489e956880c1adacb004ffdc99331a2080a6a5ba2b0f7f7250b4e27441fdbc26a32a23fa4ae7122c908ea78f246637d780e499f151012bfa48f8fb30474a7b3815e2a79e1f63a18d65e65d5f99a8c634c47586278e6f425dc36ea01a0f9ddaaab75943b995860c323efe52df7a76d8105caa6307f6b4dbfb2d1020021416121eb60e781620cb3c",
+        "recyclable": true
+    },
+    {
+        "id": 30,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/white-glass/white-glass10.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T172352Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=6818c9c822b0401d1d18f2cfb92b8c161c8f755b01098839615bc091e1f3f5a2485cc8f458700df7235a707541c1465a235a8dc1abbf0f961d8a71ec4b8845584645b9ac13db26a0b37d8b05301dbd29d070d12871f8f325698227b4ed630450ff376ab88ac04f6cec58a2ec80367d7631fafea0afb062acce852750da1c53631e3e445d8954903755ae9961dc2c9821c73e557371724692a38a1e6db6c08d0b5c637b2b55b25a00b6b9e06e3aa9222e88989064abc7ddc1e2542fef9fcf2a88a36774a644fc4f4744c48fb20ef2747edfb3bdc07f8601ba14a9e664c4e86cc420aa7e89613b0c222ae8b27e3357625d04d4946c1d4a82598c4d7024e8bdb3dd",
+        "recyclable": true
+    },
+    {
+        "id": 31,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/white-glass/white-glass105.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T172352Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=4cc5d8accd480ed27b14aa88c1c95acb4b4cb46687e66a7c300a074305f71bde8a4a730d5518b325e2bc27ac0e0283da34539c3b1f4c70e62727b077cf47e3480faee39ccea1ec0d98df37f1d83a895414bede1138dfdfed31b4a4350efeb655be8bb13570fd76ca36feef2342183775bcf8687894f34f231d1d938210fd7764cabdfeddd1409fa8a32b59d3bbfc27319b17925f43afc44c5d3cf1e7ad03712294c70a508067c92be9e991ff6e1b4139e4606495ec287dc2df2b2abb4f188982c2fc9cca3196f9814d9d6e480788ac4eba9e05f9198350f5f13711d8822b3acd4a24c54f2a2645a6b0d594880dd61078eca318c8b69a076399fe3e975478f81c",
+        "recyclable": true
+    },
+    {
+        "id": 32,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/white-glass/white-glass11.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T172352Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=6a3d8d4059907938db90e65f251f7a0c5dc5371353e93ed963bdc1739857584b9f29dca5f4fc36e8d2ada43c4e73738f36888bbb44549816f07c39c4aa8bf309771005a0a28e2408c0e5777830d2148d43f762533e09f7a2db485ccb2b29b39457be0c8e3aa78f1fc287f2988b180fe6f889c8b378f03feaf14b12a37360353d0fedb4105a7e57eda535f4c9516cd984b694bb5f2b2cd64249b0961350a763f71cc5c73fad84b65daaae8cf3c41bc025caa5f3d05c300b12c1d0b74b3b452867aed5cf8b2a25a7b15879a9aa2ce29b76c571c4625ee5d53b90f554fd36ce6b3e2f109b4a15bf5f635482671e86a9639b58f4acdb6cd0fc44db9d437ae65f7729",
+        "recyclable": true
+    },
+    {
+        "id": 33,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/white-glass/white-glass1.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T172352Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=3521b7cd227592b3b78cc0a77a2efc160d15e8d4ad4f752efe25cf344d76afe7d5d6648295189fd5fa9f3bb6561fd60b3a3efd6e803dd812dbc2c2c0798b08b4ed83d4361e619f5bcf43da520e6703215d80f7e7ce99ef5e0a05b910e4b587314409c3627b1242adcbe5a6df37a5cdfd9ac6fc492f5f970d4fb78b53cb7d1fcd96f4f1b22865a7ee0117a48d14b4ce505f241b1e9db3b35cba103d2b74edfcb1874f3871deefeca0d8e52fa11c936c71925624d96224d3dd2f4f72007ddee7cc72c5306f174be18ac5dbb2288bb75ffe6b940cc1b7563f87dd64b1d269ac1a97ec23dc8c95bc253e544c40381ed815a9993cc017f89ec521ad8bd01afb7ba3d1",
+        "recyclable": true
+    },
+    {
+        "id": 34,
+        "url": "https://storage.googleapis.com/kagglesdsdata/datasets/1115942/1874598/garbage_classification/white-glass/white-glass113.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20220904%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20220904T172352Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=0002cd88c701ef6f30d70879bff117bc35b06b67ce1337b23e8a559d644a2cc6358c568eeba4df119de2c4c7bd6c2f1630f2b72f637d29bd992aceb627389b5a5b7d78600600f9b18b67dd93186fadd1b8be40e4229a1d18697a66d641633914afcef4b7df9f59b4e165e90a59f972ba809696baca72f504a1d0fe45399451df69e2ce660e7af36be6871d5cca872c40041df2c7b0ea1c1ade61f72a7ea3f1985f1be89129b75ebd82b8cab08f5f4f53638c9f0f1d70f41de2b54671eeb14ad7b8f0c72022b27f7057a3cc7eb8eaf99acf5654f3b4a3ab8a3a7ce76625f30ffe10d39d2bc5c5c7098b77bdff36ae02a0133c9775beb2819c83010edf2b0c163d",
+        "recyclable": true
+    },
+    {
+        "id": 35,
+        "url": "https://www.relyco.com/wp-content/uploads/2019/10/Syn_Tridura_1_ALT.jpg",
+        "recyclable": true
+    },
+    {
+        "id": 36,
+        "url": "https://images.unsplash.com/photo-1603484477859-abe6a73f9366?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFwZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+        "recyclable": true
+    },
+    {
+        "id": 37,
+        "url": "https://images.unsplash.com/photo-1528458965990-428de4b1cb0d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBhcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        "recyclable": true
+    },
+    {
+        "id": 38,
+        "url": "https://assets.leevalley.com/Size4/10111/45K2072-36-inch-x-24-cardboard-sheet-ea-f-0077.jpg",
+        "recyclable": true
+    },
+    {
+        "id": 39,
+        "url": "https://www.standingcloud.com/wp-content/uploads/2020/01/brown-cardboard-boxes.jpg",
+        "recyclable": true
+    },
+    {
+        "id": 40,
+        "url": "https://images.ctfassets.net/cnu0m8re1exe/1B2EkF2WqK1bpCmiRTS9tT/091089a0ba0e2d2ccf217b7a8af7be20/shutterstock_712781533.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill",
+        "recyclable": false
+    },
+    {
+        "id": 41,
+        "url": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/01/styrofoam-takeout-containers-food-1296x728-header-1296x728.jpg?w=1575",
+        "recyclable": false
+    },
+    {
+        "id": 42,
+        "url": "https://1vn05tkox332rk3uv2icumia-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/Pioneer-Images-27.png",
+        "recyclable": false
+    },
+    {
+        "id": 43,
+        "url": "https://m.media-amazon.com/images/I/51poAdjEsLL._AC_SY450_.jpg",
+        "recyclable": false
+    },
+    {
+        "id": 44,
+        "url": "https://www.fitnessdepot.ca/ottawa/media/catalog/product/b/f/bfu050.jpg",
+        "recyclable": true
+    },
+    {
+        "id": 45,
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Candies_wrapper.JPG/220px-Candies_wrapper.JPG",
+        "recyclable": false
+    }
+]

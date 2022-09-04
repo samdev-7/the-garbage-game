@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}The Garbage Game{% endblock %}
+{% block head %}
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="login.css">
+
+        <script>
+            const img_id = {{ img_id }};
+        </script>
+{% endblock %}
+{% block content %}
+<div class = "main-wrapper">
+    <h1>Test your knowledge to sort garbage</h1>
+    <h2>Score: {{ score }}</h2>
+    
+    <div>
+        <img src="{{ image_src }}" width="600px" height="400px" />
+
+        <form id="sortform" class="login-form" method="POST">
+            <label for="can_recyc" class="form-label">Is it Recyclable?</label>
+            <select name="can_recyc" id="can_recyc">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <input type="submit" name="submit" value="Check" class="form-submit" />
+            <!--<input style="display: hidden;" type="submit" name="submit" value="Next" />-->
+        </form>
+
+    </div>
+</div>
+        
+
+        <script src="sort_garbage.js"></script>
+{% endblock %}

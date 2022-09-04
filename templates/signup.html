@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <title>Carbon Tracker - Sign Up</title>
+{% extends "base.html" %}
+{% block title %}Sign Up - The Garbage Game{% endblock %}
+{% block head %}
         <link rel="stylesheet" href="/styles.css">
         <link rel="stylesheet" href="signup.css">
-    </head>
-    <body>
+{% endblock %}
+
+{% block content %}
         <div class="login-bg">
             <div class="login-window">
                 <h1 class="login-title">Sign Up</h1>
@@ -19,9 +18,9 @@
                     <input required id="password" type="password" name="password" placeholder="Account password" class="form-input" />
                     <input type="submit" value="Sign Up" class="form-submit" />
                 </form>
+                <a href="/login">Login</a>
             </div>
         <div>
 
         <script src="signup.js"></script>
-    </body>
-</html>
+{% endblock %}

@@ -9,7 +9,6 @@ class MongoDB():
         self._col = self._db[collection]
 
     def __setitem__(self, key, value):
-        print(key, value)
         self._col.update_one({'_id': key}, {"$set": {'_id': key, 'value': value}}, upsert=True)
     
     def __getitem__(self, key):
@@ -42,14 +41,4 @@ class MongoDB():
 
     def items(self):
         return (item['_id'] for item in self._col.find({}))
-
-    # TODO: Not working
-    def num_images(self):
-        num = 0
-        for item in self._col.find({}):
-            if item['_id'].contains("image"):
-                num = num + 1
-        return num
-
-    def values(self):
-        return (item['value'] for item in self._col.find({}))
+        

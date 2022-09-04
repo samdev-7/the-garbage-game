@@ -14,7 +14,7 @@ function submitForm(event) {
             } else if (text == "No account exists") {
                 alert("No account exists, please sign up");
             } else if (text == "Success") {
-                window.location.href = "/dashboard";
+                window.location.href = "/";
             }
         }
     };

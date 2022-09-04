@@ -3,9 +3,11 @@ import os, mongo
 from flask import Flask
 from flask import render_template, session, request, redirect, abort, url_for
 from werkzeug.utils import secure_filename
-import html
+import random
+import json
 
 db = mongo.MongoDB(connectionString=os.getenv('MONGODB_URL'), database='accounts', collection='users')
+img_db = mongo.MongoDB(connectionString=os.getenv('MONGODB_URL'), database='images', collection='images')
 
 app = Flask(__name__, static_url_path='', static_folder='./static')
 app.secret_key = os.getenv('SESSION_SECRET')
@@ -14,7 +16,7 @@ app.secret_key = os.getenv('SESSION_SECRET')
 def index():
     return render_template('index.html')
 
-@app.route("/dashboard/")
+#@app.route("/dashboard/")
 def dashboard():
     """Render dashboard"""
     if session.get('email'):
@@ -39,13 +41,13 @@ def signup():
                 return "Account already exists"
             else:
                 # No account exists
-                db[email] = {'password': password, 'name': name}
+                db[email] = {'password': password, 'name': name, 'score': 0}
                 session['email'] = email
                 session['name'] = name
                 return "Success"
     else:
         # Logged in
-        return redirect('/dashboard')
+        return redirect('/sortgarbage')
 
 @app.route("/login/", methods=['GET', 'POST'])
 def login():    
@@ -59,7 +61,6 @@ def login():
             email = request.form['email']
             password = request.form['password']
             if email in db:
-                print("in db")
                 if db[email]['password'] == password:
                     session['email'] = email
                     session['name'] = db[email]['name']
@@ -69,15 +70,13 @@ def login():
             else:
                 return "No account exists"
     else:
-        return redirect('/dashboard')
+        return redirect('/sortgarbage')
 
 
-def is_signed_in(email: str) -> bool:
+def is_signed_in() -> bool:
     """Check if user is signed in"""
+    return session.get('email') != None
 
-    #TODO
-    #wait do we need this tho because by default they will already be signed in or logged in from the first part right
-    #like if we call the earlier functions first than it's already guarenteed that they are logged or signed in
 
 def get_streak(email: str) -> int:
     """Get streak from database"""
@@ -88,7 +87,7 @@ def get_streak(email: str) -> int:
             db[email]['streak'] = 0
             return 0
 
-@app.route("/api/log/", methods=['POST'])
+#@app.route("/api/log/", methods=['POST'])
 def log_info():
     '''log()
     will count last day they logged and then increment if it was consecutive'''
@@ -101,7 +100,7 @@ def log_info():
     # request.form['name']
     pass
 
-@app.route('/api/streak/', methods=['GET'])
+#@app.route('/api/streak/', methods=['GET'])
 def streak():
     '''streak()
     will tell you the streak'''
@@ -113,7 +112,7 @@ def logout():
     session.pop('email', None)
     return redirect('/')
 
-@app.route("/upload/", methods=['GET', 'POST'])
+#@app.route("/upload/", methods=['GET', 'POST'])
 def upload():
     '''Creating account with username and password'''
     if not session.get('email'):
@@ -146,8 +145,11 @@ def upload():
             message = "Your image "+f.filename+" has been successfully uploaded."
             return render_template('upload_file.html', message=message)
 
-@app.route("/sortgarbage/<image_id>", methods=['GET', 'POST'])
-def sortgarbage(image_id):
+with open('./static/upload/image.json') as f:
+   images = json.load(f)
+
+@app.route("/sortgarbage/", methods=['GET', 'POST'])
+def sortgarbage():
     '''Creating account with username and password'''
     if not session.get('email'):
         # Not logged in
@@ -156,41 +158,44 @@ def sortgarbage(image_id):
     else:
         # Logged in
         if request.method == 'GET':
-            check_disabled = request.args.get('check_disabled')
-            next_disabled = request.args.get('next_disabled')
-
-            if check_disabled is None and next_disabled is None:
-                next_disabled = 'disabled'
-            
-            return render_template('sort_garbage.html', image_name=html.unescape(db['image'+image_id]["name"]), check_disabled = check_disabled, next_disabled = next_disabled)
+            email = session['email']
+            image = random.choice(images)
+            return render_template('sortgarbage.html', image_src=image['url'], img_id=image['id'], score=db[email]['score'])
         elif request.method == 'POST':
-            next_id = str(int(image_id)+1)
+            email = session['email']
+            can_recyc = request.form['can_recyc']
+
+            if can_recyc == 'yes':
+                can_recyc = True
+            else:
+                can_recyc = False
+
+            img_id = request.form['img_id']
             
-            if request.form["submit"] == 'Next':
-                session['check_message'] = ''
-                session['is_correct'] = True
-                return redirect(url_for("sortgarbage", image_id=next_id, check_disabled = '', next_disabled = 'disabled'))
-            elif request.form["submit"] == 'Check':
-                if 'score' in session:
-                    score = session['score']
-                else:
-                    score = 0
+            for image in images:
+                if image['id'] == int(img_id):
+                    if image['recyclable'] == can_recyc:
+                        # Correct
+                        db._col.update_one({'_id': email}, {"$set": {'_id': email, 'value': { "password": db[email]['password'], "name": db[email]['name'], "score" : db[email]['score']+10 }}})
+                        return "Correct"
+                    else:
+                        # Incorrect
+                        db._col.update_one({'_id': email}, {"$set": {'_id': email, 'value': { "password": db[email]['password'], "name": db[email]['name'], "score" : db[email]['score']-10 }}})
+                        return "Incorrect"
+        
+@app.route("/leaderboard/", methods=['GET'])
+def leaderboards():
+    '''leaderboards() -> str
+    displays the leaderboards, top 10 or smth'''
+    #sort score
+    leaderList = sorted(db.values(), key=lambda x: x['score'], reverse=True)
 
-                can_recyc = request.form["can_recyc"]
-                answer = db['image'+image_id]["can_recyc"]
+    scores = []
+    for place, account in enumerate(leaderList):
+        scores.append({'place': place+1, 'name': account['name'], 'score': account['score']})
 
-                if can_recyc == answer:
-                    score = score + 10
-                    session['score'] = score
-                    message = "Good job!!!"
-                    session['is_correct'] = True
-                else:
-                    message = "Whoops! It's wrong."
-                    session['is_correct'] = False
-                session["check_message"] = message
 
-                return redirect(url_for("sortgarbage", image_id=image_id, check_disabled = 'disabled', next_disabled = ''))
-
+    return render_template('leaderboard.html', scores=scores)
+    
 if __name__ == "__main__":
     app.run(debug=True)
-    

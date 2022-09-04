@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Leaderboard - The Garbage Game{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="leaderboard.css">
+{% endblock %}
+
+{% block content %}
+    <div class="leaderboard">
+        {% for score in scores %} 
+        <div class = "leaderboard-item">
+            <div class = "leaderboard-item-place">
+                {{ score.place }}.
+            </div>
+            <div class = "leaderboard-item-name">
+                <p>{{ score.name }}</p>
+            </div>
+            <div class = "leaderboard-item-score">
+                <p>{{ score.score }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

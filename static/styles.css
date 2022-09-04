@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+:root {
+    --greenCol: #99e699
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Baloo Tamma 2', cursive;
+    color:black;
+}
+
+body{
+    position: relative;
+    background-image: url(imgs/ecotreebg.png);
+    background-repeat: repeat-x;
+    background-position-y: center;
+}
+
+/* -- NAVBAR CSS -- */
+.navbar-section {
+    background-color: var(--greenCol);
+}
+.navbar-section p {
+    position: absolute;
+    top:0.9rem;
+    left:0.7rem;
+    font-size: 20px;
+}
+
+.navbar-items-login {
+    position: absolute;
+    top:1rem;
+    right:4rem;
+}
+
+.navbar-items-login span {
+    position: absolute;
+    padding-left: 15px;
+    top:0rem;
+}
+.navbar-section ul {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+ul:last-child {
+    display: flex;
+    justify-self: end;
+}
+.navbar-items{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* -- NAVBAR CSS -- */
+
+/* -- SHOWCASE CSS -- */
+.continue-link {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+.continue-link-item {
+    box-shadow: 10px 10px 50px 5px rgb(62, 154, 62);
+    background-color: var(--greenCol);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right:60px;
+    padding-left:60px;
+    border-radius: 15px;
+}
+
+.continue-link-item span {
+    position: relative;
+    top:0.35rem;
+    right:0.6rem;
+}
+
+/* -- SHOWCASE CSS -- */
+a:hover {
+    color: rgb(255,255,255);
+}
+
