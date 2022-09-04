@@ -137,10 +137,14 @@ def upload():
             file_key = 'image'+str(seq_no)
 
             f.save(os.path.dirname(os.path.abspath(__file__))+"/static/upload/"+file_path)
-            db[file_key] = {'name': file_path}
+
+            can_recyc = request.form["can_recyc"]
+
+            db[file_key] = {'name': file_path, 'can_recyc': can_recyc}
 
             session['seq_no'] = seq_no
-            return render_template('upload_file.html')
+            message = "Your image "+f.filename+" has been successfully uploaded."
+            return render_template('upload_file.html', message=message)
 
 @app.route("/sortgarbage/<image_id>", methods=['GET', 'POST'])
 def sortgarbage(image_id):
@@ -152,12 +156,40 @@ def sortgarbage(image_id):
     else:
         # Logged in
         if request.method == 'GET':
-            return render_template('sort_garbage.html', image_name=html.unescape(db['image'+image_id]["name"]))
-        elif request.method == 'POST':
-            #if request.args.get("submit") == 'Next':
-            new_name = 'image'+str(int(image_id)+1)
-            return render_template('sort_garbage.html', image_name=html.unescape(db[new_name]["name"]))
+            check_disabled = request.args.get('check_disabled')
+            next_disabled = request.args.get('next_disabled')
 
+            if check_disabled is None and next_disabled is None:
+                next_disabled = 'disabled'
+            
+            return render_template('sort_garbage.html', image_name=html.unescape(db['image'+image_id]["name"]), check_disabled = check_disabled, next_disabled = next_disabled)
+        elif request.method == 'POST':
+            next_id = str(int(image_id)+1)
+            
+            if request.form["submit"] == 'Next':
+                session['check_message'] = ''
+                session['is_correct'] = True
+                return redirect(url_for("sortgarbage", image_id=next_id, check_disabled = '', next_disabled = 'disabled'))
+            elif request.form["submit"] == 'Check':
+                if 'score' in session:
+                    score = session['score']
+                else:
+                    score = 0
+
+                can_recyc = request.form["can_recyc"]
+                answer = db['image'+image_id]["can_recyc"]
+
+                if can_recyc == answer:
+                    score = score + 10
+                    session['score'] = score
+                    message = "Good job!!!"
+                    session['is_correct'] = True
+                else:
+                    message = "Whoops! It's wrong."
+                    session['is_correct'] = False
+                session["check_message"] = message
+
+                return redirect(url_for("sortgarbage", image_id=image_id, check_disabled = 'disabled', next_disabled = ''))
 
 if __name__ == "__main__":
     app.run(debug=True)

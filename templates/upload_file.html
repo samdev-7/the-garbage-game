@@ -10,10 +10,16 @@
         <div class="login-bg">
             <div class="login-window">
                 <h1 class="login-title">Login</h1>
+                <h2><p style="color:red">{{ message }}</p></h2>
                 <form id="uploadform" class="login-form" enctype="multipart/form-data" method="POST">
                     <label for="file" class="form-label">Image to Upload</label>
                     <input id="file" type="file" name="file" />
                     <p/>
+                    <label for="can_recyc" class="form-label">Is it Recyclable?</label>
+                    <select name="can_recyc" id="can_recyc">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>    
                     <p/>
                      <input type="submit" value="Upload" class="form-submit" />
                 </form>
