@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Carbon Tracker - Sort Garbage</title>
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div>
+            <img src="/upload/{{ image_name }}" width="600px" height="400px" />
+
+            <form id="sortform" class="login-form" method="POST">
+                <label for="file" class="form-label">Image to Upload</label>
+                <select name="can_recyc" id="can_recyc">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <p/>
+                <p/>
+                 <input type="submit" name="submit" value="Check" class="form-submit" />
+                 <input type="submit" name="submit" value="Next" />
+            </form>
+
+        </div>
+    </body>
+</html>

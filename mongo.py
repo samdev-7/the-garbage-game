@@ -41,4 +41,13 @@ class MongoDB():
 
     def items(self):
         return (item['_id'] for item in self._col.find({}))
+
+    # TODO: Not working
+    def num_images(self):
+        num = 0
+        for item in self._col.find({}):
+            if item['_id'].contains("image"):
+                num = num + 1
+        return num
+
         
