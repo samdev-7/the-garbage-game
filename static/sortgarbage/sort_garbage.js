@@ -5,7 +5,7 @@ function submitForm(event) {
     var data = new FormData(form);
     data.append("img_id", img_id);
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/sortgarbage");
+    xhr.open("POST", "/sortgarbage/");
     xhr.send(data);
 
     xhr.onreadystatechange = function () {

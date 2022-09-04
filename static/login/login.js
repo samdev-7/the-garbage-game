@@ -2,7 +2,7 @@ function submitForm(event) {
     event.preventDefault();
     var data = new FormData(form);
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/login");
+    xhr.open("POST", "/login/");
     xhr.send(data);
 
     xhr.onreadystatechange = function () {
